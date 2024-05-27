@@ -1,0 +1,509 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 3000px;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+.back {
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+    height: 600px; 
+    
+}
+.nam::before {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 60%; 
+    height: 89%;
+    background-color: rgb(230, 229, 229);
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+    z-index: -1;
+    opacity: 0.7;
+}
+.back::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 40%; 
+    height: 200%;
+    background: linear-gradient(to right, #0157b4, #57a0d3);
+    border-radius: 10px; 
+    z-index: -1;
+    opacity: 0.6;
+}
+.footer-container {
+    background: linear-gradient(to left, #fede6e, #fecc00, #fede6e),
+            linear-gradient(to right, #fede6e, #fecc00, #fede6e);
+    color: #008ad2;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+    margin-top: auto;
+    position: absolute;
+    bottom: -2500px;
+}
+.con{
+    color: #008ad2;
+    text-align: center;
+    margin-bottom:0px;
+    font-size: 25px;
+}
+.footerlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.mainbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box0, .box1, .box2,.box3,.box4{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box0:hover,.box1:hover,.box2:hover,.box3:hover,.box4:hover {
+    transform: scale(1.2);
+}
+.lo{
+    height:60px;
+    width:60px;
+}
+.item {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+}
+
+.dem0 {
+    position: absolute;
+    top: 300px;
+    margin-left: 250px;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+    filter: drop-shadow(2px 2px 1px lightgreen);
+    color: black;
+    
+}
+
+.dem1 {
+    position: absolute;
+    top: 330px;
+    margin-left: 250px;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+    filter: drop-shadow(2px 2px 1px lightgreen);
+    color: black;
+    font-size: 70px;
+    
+}
+
+.dem2 {
+    top: 0;
+    position: sticky;
+    box-shadow: 0px 0px 10px black;
+    overflow: hidden;
+    padding: 10px;
+    font-family: "Merienda", cursive;
+    opacity: 0.8;
+    background: linear-gradient(to right, #022f5f, #57a0d3);
+    z-index: 3;
+    border-radius: 5px;
+}
+
+.dem2 a {
+    float: right;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.dem2 a:hover {
+    color: black;
+    background-color:lightblue;
+}
+
+.dem3 {
+    position: relative;
+    float: right;
+    right: 20px;
+    top: 70px;
+    height: 450px;
+    width: 450px;
+    border: 3px solid red;
+    border-radius: 5000px;
+    z-index: 1;
+    display: block;
+}
+
+.dem4 {
+    position: absolute;
+    top: 700px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 20px;
+    font-style: normal;
+    background: linear-gradient(to left, rgba(0, 123, 255, 0.8), rgba(255, 255, 255, 0.8));
+    border-radius: 5px;
+    font-size: 20px;
+    float:right;
+}
+.about-content{
+    color: #0056b3;
+    font-size: 30px;
+}
+
+.dem9 {
+    position: relative;
+    float:left;
+    top: 10px;
+    height: 200px;
+    width: 150px;
+    border: 3px solid red;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    transform: rotate(-5deg);
+}
+
+.dem5 {
+    position: absolute;
+    top: 1000px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 20px;
+    font-style: normal;
+    background: linear-gradient(to right, rgba(181, 238, 239, 0.8), rgba(255, 255, 255, 0.8));
+
+}
+.dem6{
+    position: absolute;
+    top: 1700px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 20px;
+    font-style: normal;
+    background: linear-gradient(to right, #add8e6, #ffb6c1);
+
+}
+.dem7 {
+    position: absolute;
+    top: 2500px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    background: #f9f9f9;
+    background: linear-gradient(to right, #e6e6fa, #ffdab9);
+
+}
+.project {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.project-details {
+    display: none;
+    padding-top: 10px;
+}
+.stylish-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.stylish-button:hover {
+    background-color: #0056b3;
+}
+
+
+.dem8 {
+    position: absolute;
+    top: 2100px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 20px;
+    font-style: normal;
+    width: 100%;
+    background: linear-gradient(to right, #98ff98, #fffacd);
+
+}
+
+fieldset {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aw1, .aw2, .aw3, .aw4 {
+    width: 21%;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.aw1:hover, .aw2:hover, .aw3:hover, .aw4:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.aw1 h3, .aw2 h3, .aw3 h3, .aw4 h3 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.aw1 p, .aw2 p, .aw3 p, .aw4 p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.stylish-button1{
+    position: relative;
+    background-color: #007BFF; 
+    color: #ffffff; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px;  
+    cursor: pointer;
+    border-radius: 12px; 
+    transition: background-color 0.3s, transform 0.3s;
+    top:65px; 
+    left:40px;
+}
+.stylish-button2{
+    position: relative;
+    background-color: #007BFF; 
+    color: #ffffff; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px;  
+    cursor: pointer;
+    border-radius: 12px; 
+    transition: background-color 0.3s, transform 0.3s;
+    top:90px; 
+    left:40px;
+}
+.stylish-button {
+    position: relative;
+    background-color: #007BFF; 
+    color: #ffffff; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px;  
+    cursor: pointer;
+    border-radius: 12px; 
+    transition: background-color 0.3s, transform 0.3s;
+    top:10px; 
+    left:40px;
+}
+
+.stylish-button:hover,.stylish-button2:hover,.stylish-button1:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+.stylish-button:active,.stylish-button2:active,.stylish-button1:active{
+    background-color: #004080; 
+    transform: scale(1); 
+}
+.vit{
+    width:180px;
+    height:170px;
+    border-radius:5px;
+    float:left;
+    margin : 10px;
+    margin-right: 60px;
+}
+.rrk{
+    width:180px;
+    height:170px;
+    border-radius:5px;
+    float:right;
+    margin-right: 10px;
+    margin-left:0px;
+}
+.shcs{
+    width:180px;
+    height:170px;
+    border-radius:5px;
+    float:left;
+    margin : 10px;
+    margin-right: 60px;
+
+}
+.ed1{
+    float: left;
+    width:50%;
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.ed1:hover,.ed2:hover,.ed3:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(84, 79, 79, 0.897);
+}
+.ed2{
+    float:right;
+    margin-top:10px;
+    margin-bottom:10px;
+    width:48%;
+    padding-left: 25px;
+    margin-right:1px;
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.ed3{
+    float:left;
+    width:50%;
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.about-content1{
+    color:  #654321;
+    font-size: 30px;
+}
+.about-content2{
+    color:  #4b0082;
+    font-size: 30px;
+}
+.about-content3{
+    color:  #000080;
+    font-size: 30px;
+}
+.vertical-line {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px solid black;
+    transform: translateX(-50%);
+}
+
+
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.skills-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-item {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 150px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+}
+
+.skill-item .skill-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.skill-item .skill-bar {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 10px;
+    position: relative;
+}
+
+.skill-item .skill-level {
+    background-color: #FFD700;
+    border-radius: 10px;
+    height: 100%;
+    width: 0;
+    transition: width 1s ease;
+}
+
+.skill-item:hover .skill-level {
+    width: var(--skill-level);
+}
