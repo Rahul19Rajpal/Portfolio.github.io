@@ -292,7 +292,7 @@ fieldset {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.aw1, .aw2, .aw3, .aw4 {
+.aw1, .aw2, .aw3, .aw4,.aw5 {
     width: 21%;
     height: 250px;
     display: inline-block;
