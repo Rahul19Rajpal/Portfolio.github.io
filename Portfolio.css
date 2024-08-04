@@ -292,7 +292,7 @@ fieldset {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.aw1, .aw2, .aw3, .aw4,.aw5, .aw6 {
+.aw1, .aw2, .aw3, .aw4,.aw5, .aw6 , .aw7{
     width: 21%;
     height: 250px;
     display: inline-block;
@@ -305,17 +305,17 @@ fieldset {
     padding: 20px;
 }
 
-.aw1:hover, .aw2:hover, .aw3:hover, .aw4:hover,.aw5:hover,.aw6:hover {
+.aw1:hover, .aw2:hover, .aw3:hover, .aw4:hover,.aw5:hover,.aw6:hover ,.aw7:hover{
     transform: scale(1.05); 
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.aw1 h3, .aw2 h3, .aw3 h3, .aw4 h3 ,.aw5 h3.aw6 h3 {
+.aw1 h3, .aw2 h3, .aw3 h3, .aw4 h3 ,.aw5 h3.aw6 h3 , .aw7 h3{
     font-size: 20px;
     margin: 0 0 10px 0;
 }
 
-.aw1 p, .aw2 p, .aw3 p, .aw4 p , .aw5 h3 ,.aw6 h3 {
+.aw1 p, .aw2 p, .aw3 p, .aw4 p , .aw5 h3 ,.aw6 h3, .aw7 h3 {
     font-size: 16px;
     margin: 5px 0;
 }
