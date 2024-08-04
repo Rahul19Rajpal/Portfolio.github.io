@@ -60,7 +60,7 @@ body {
     z-index: 2;
     margin-top: auto;
     position: absolute;
-    bottom: -2700px;
+    bottom: -2900px;
 }
 .con{
     color: #008ad2;
@@ -225,7 +225,7 @@ body {
 }
 .dem7 {
     position: absolute;
-    top: 3000px;
+    top: 2800px;
     color: black;
     font-family: "Roboto", sans-serif;
     width: 100%;
